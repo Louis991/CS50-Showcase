@@ -1,0 +1,85 @@
+/*-----------------------*/
+/* General styles */
+/*-----------------------*/
+
+/* Border-box model */
+html{box-sizing: border-box;}
+
+/* Responsive images*/
+img{max-width: 100%;}
+
+/* Body */
+body
+{
+    background-color: RGB(250,191,143);
+}
+
+/* Footer */
+.footer
+{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 18px;
+    font-size: 0.75em;
+    text-align: center;
+    background-color: RGB(52,58,64);
+    color: RGB(191,193,207);
+    overflow: hidden;
+    box-shadow: 0 -8px 6px -6px grey;
+}
+.footer p
+{
+    margin: 0;
+    width: auto;
+}
+
+/* Padding for sections */
+section{padding: 2.2em;}
+
+/* Header text shadow */
+h1, h2{text-shadow: 1px 1px 1px grey;}
+
+/* Shadow for the navbar */
+.navbar{box-shadow: 0 8px 6px -6px grey;}
+
+/* Dark and light mode colors. Gradient code from: https://cssboxshadow.com/gradient-generator/ */
+.darkmode
+{
+    /*background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);*/
+    background: rgba(20,99,173,1);
+    background: -moz-linear-gradient(left, rgba(20,99,173,1) 0%, rgba(17,77,146,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(20,99,173,1)), color-stop(100%, rgba(17,77,146,1)));
+    background: -webkit-linear-gradient(left, rgba(20,99,173,1) 0%, rgba(17,77,146,1) 100%);
+    background: -o-linear-gradient(left, rgba(20,99,173,1) 0%, rgba(17,77,146,1) 100%);
+    background: -ms-linear-gradient(left, rgba(20,99,173,1) 0%, rgba(17,77,146,1) 100%);
+    background: linear-gradient(to right, rgba(20,99,173,1) 0%, rgba(17,77,146,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1463ad', endColorstr='#114d92', GradientType=1 );
+    color: RGB(184,187,190);
+}
+
+.lightmode
+{
+    /*background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);*/
+    background: rgba(241,231,103,1);
+    background: -moz-linear-gradient(left, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(241,231,103,1)), color-stop(100%, rgba(254,182,69,1)));
+    background: -webkit-linear-gradient(left, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+    background: -o-linear-gradient(left, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+    background: -ms-linear-gradient(left, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+    background: linear-gradient(to right, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645', GradientType=1 );
+    color: black;
+}
+
+/* Moon icon */
+.moon
+{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    box-shadow: inset 8px 0px #777, inset 8px 0px 0.5px 1px #777;
+    -moz-box-shadow: inset 8px 0px #777, inset 8px 0px 0.5px 1px #777;
+}

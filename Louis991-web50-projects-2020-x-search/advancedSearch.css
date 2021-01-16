@@ -1,0 +1,214 @@
+/* Body adjustments */
+body{
+	box-sizing: border-box;
+	font: 400 13.3333px Arial; 
+	color: #222;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+
+/* No default outline for form inputs */
+input:focus{
+        outline: none;
+}
+button:focus{
+        outline: none;
+}
+
+
+/* Main adjustments */
+main{
+	margin-top: 92px;
+	padding-left: 50px;
+	padding-right: 25%;
+}
+
+
+/* Header adjustments */
+header{
+	color: #d93025;
+    font-size: 20px;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    margin-bottom: -65px;
+    margin-top: 75px;
+}
+
+header p{
+	padding-left: 50px;
+}
+
+
+/* Navbar */
+#navbar{
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 28px;
+}
+
+#advancedSLogo{
+	margin-right: auto;
+	margin-left: 28px;
+	margin-top: 15px;
+	width: 136px;
+	height: 46px;
+}
+
+a{
+	text-decoration: none;
+	font: 400 13.3333px Arial; 
+	color: rgb(65, 65, 65);
+	margin-right: 20px;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+
+/* Advanced search form */
+form{
+	display: grid;
+	grid-template-rows: repeat(5, 42px);
+	grid-template-columns: 15% minmax(554px, 50%) 35%;
+	grid-template-areas:
+		"searchType searchType searchGuide"
+		"typedesc1 text1 example1"
+		"typedesc2 text2 example2"
+		"typedesc3 text3 example3"
+		"typedesc4 text4 example4"
+		"button button button";
+	text-align: left;
+	grid-row-gap: 8px;
+	grid-column-gap: 15px;
+	justify-content: flex-start;
+	align-content: flex-start;
+}
+
+#searchType{grid-area: searchType;}
+#searchGuide{grid-area: searchGuide;}
+
+#allTheseWords-label{grid-area: typedesc1;}
+#allTheseWords{grid-area: text1;}
+#allTheseWords-desc{grid-area: example1;}
+
+#exactWOrP-label{grid-area: typedesc2;}
+#exactWOrP{grid-area: text2;}
+#exactWOrP-desc{grid-area: example2;}
+
+#anyOf-label{grid-area: typedesc3;}
+#anyOf{grid-area: text3;}
+#anyOf-desc{grid-area: example3;}
+
+#noneOf-label{grid-area: typedesc4;}
+#noneOf{grid-area: text4;}
+#noneOf-desc{grid-area: example4;}
+
+#advancedSButton{grid-area: button;}
+
+
+/* Phone adjustments */
+@media screen and (max-width: 67.25em){
+	form{
+	display: grid;
+	grid-template-rows: repeat(10, auto);
+	grid-template-columns: 1fr 2fr;
+	grid-template-areas:
+		"searchType searchGuide"
+		"typedesc1 text1"
+		"example1 example1"
+		"typedesc2 text2"
+		"example2 example2"
+		"typedesc3 text3"
+		"example3 example3"
+		"typedesc4 text4"
+		"example4 example4"
+		"button button";
+	text-align: left;
+	grid-row-gap: 20px;
+	justify-content: center;
+	align-content: center;
+	}
+
+	#advancedSButton{
+		margin-bottom: 25px;
+		margin-left: auto;
+	}
+
+	.example{
+		border-bottom: 1px solid rgb(230, 230, 230);
+		padding-bottom: 7px;
+	}
+
+	label, .advancedField{
+		margin-top: 35px;
+	}
+
+	main{
+		padding-right: 10%;
+		padding-left: 10%;
+	}
+}
+
+
+/* Some other form adjustments */
+#searchType, #searchGuide{
+	margin-bottom: 10px;
+}
+
+
+/* Button */
+#advancedSButton{
+	margin-top: 40px;
+	width: 157px;
+	height: 28px;
+	border-radius: 3px;
+	color: white;
+	background-color: rgba(73,155,234,1);
+	border: 1px solid #3079ed;
+	padding: 5px;
+	font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#advancedSButton:hover{
+	border: 1px solid blue;
+	background: linear-gradient(to bottom, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+}
+
+#advancedSButton:active{
+	box-shadow: inset 0px 1.2px 1.5px 0px rgba(0,0,0,0.40);
+}
+
+/* Text input dimensions */
+input[type="text"]{
+	height: 25px;
+	border: 1px solid rgb(225, 225, 225);
+	border-style: inset;
+}
+
+input[type="text"]:focus{
+	border: 1px solid #4d90fe;
+	box-shadow: inset 0px 1.2px 1.5px 0px rgba(0,0,0,0.40);
+}
+
+
+/* Example text */
+.guide{
+	color: #666;
+	margin: 0;
+    padding: 0;
+}
+.example{
+    font-family: monospace;
+    font-size: 11px;
+}
+#searchGuide{
+	color: #777;
+	font-weight: 700;
+}
+
+.searchType, .searchGuide{
+	padding-bottom: 10px;
+}

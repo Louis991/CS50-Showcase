@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Your history
+{% endblock %}
+
+{% block main %}
+<div class="table-responsive-md">
+    <table class="table table-hover table-sm" id="summary">
+        <thead>
+            <tr>
+                <th scope="col">Company name</th>
+                <th scope="col">Symbol</th>
+                <th scope="col">Bought</th>
+                <th scope="col">Price</th>
+                <th scope="col">Date</th>
+            </tr>
+        </thead>
+        {% if rowsLength > 0 %}
+            {% for x in range(rowsLength) %}
+                <tbody>
+                    <tr>
+                        <!--Stock name-->
+                        <td>{{ companyNames[x] }}</td>
+                        <!--Symbol-->
+                        <td>{{ rows[x]["symbol"] }}</td>
+                        <!--Bought/Sold-->
+                        <td>{{ rows[x]["bought"] }}</td>
+                        <!--Share price-->
+                        <td>{{ rows[x]["stockPrice"] }}</td>
+                        <!--Date-->
+                        <td>{{ rows[x]["date"] }}</td>
+                    </tr>
+                </tbody>
+            {% endfor %}
+        {% endif %}
+    </table>
+</div>
+{% endblock %}

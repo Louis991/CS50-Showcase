@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <link href="ee.css" rel="stylesheet">
+        <script src="index.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>My Homepage - EE</title>
+    </head>
+    <body>
+        <div id="container">
+            <!-- Navigation bar-->
+            <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark" id="navbar">
+                <a class="navbar-brand" href="#">LF</a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="ee.html">E.E. Info</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="books.html">Favorite books</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="music.html">Music</a>
+                    </li>
+                  </ul>
+                </div>
+                <a class="navbar-brand ml-auto" onclick="setCookie()" href="#"><div class="moon"></div></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+            <!-- About EE-->
+            <section id="aboutEE-section">
+                <h1>Some neat things in the realm of Electrical Engineering.</h1>
+                <p>That I would like to show you.</p>
+            </section>
+            <section id="pv">
+                <h2>Renewable generation.</h2>
+                <p>Renewable energy is energy that is collected from renewable resources, which are naturally replenished on a human timescale, including carbon neutral sources like sunlight, wind, rain, tides, waves, and geothermal heat. The term often also encompasses biomass as well, whose carbon neutral status is under debate.</p>
+                <p>Renewable energy often provides energy in four important areas: electricity generation, air and water heating/cooling, transportation, and rural (off-grid) energy services.</p>
+            </section>
+            <!-- EE images-->
+            <div id="pvimg">
+                <img id="pv1" src="images/pv1.png" alt="Thin-film non-silicon photovoltaic power plant.">
+                <img id="pv2" src="images/pv2.png" alt="Thin film dye-sensitized module">
+                <img id="pv3" src="images/pv3.png" alt="Nanoantenna structure captures IR spectrum radiation">
+                <img id="wind1" src="images/wind1.png" alt="Compact wind acceleration turbine">
+                <img id="wind2" src="images/wind2.png" alt="Bladed tip wind turbines installed on a roof">
+                <img id="hawt" src="images/HAWT.png" alt="Horizontal axis wind turbine off-shore">
+                <img id="hoover" src="images/hooverdam.png" alt="Hoover Dam">
+                <img id="vawt" src="images/VAWT.png" alt="Vertical axis wind turbine">
+                <img id="kinetic" src="images/kinetic.png" alt="Kinetic energy conversion pad">
+                <img id="oyster" src="images/OWEC.png" alt="Oyster wave energy converter">
+                <img id="picohydro" src="images/picohydro.png" alt="Pico hydro generator">
+                <img id="buoy" src="images/buoy.png" alt="Buoy for ocean wave hydrokinetic generation">
+            </div>
+            <!-- Automation and robotics-->
+            <section id="robo">
+                <h2>Automation and robotics.</h2>
+                <p>Automation is the technology by which a process or procedure is performed with minimal human assistance. Automation, or automatic control, is the use of various control systems for operating equipment such as machinery, processes in factories, boilers, and heat-treating ovens, switching on telephone networks, steering, and stabilization of ships, aircraft, and other applications and vehicles with minimal or reduced human intervention.</p>
+                <p>Robotics is an interdisciplinary research area at the interface of computer science and engineering. Robotics involves design, construction, operation, and use of robots. The goal of robotics is to design intelligent machines that can help and assist humans in their day-to-day lives and keep everyone safe. Robotics draws on the achievement of information engineering, computer engineering, mechanical engineering, electronic engineering and others.</p>
+            </section>
+            <!-- Robo images-->
+            <div id="roboimg">
+                <img id="robo1" src="images/robo1.png" alt="Robot arm used in manufacturing">
+                <img id="robo2" src="images/robo2.png" alt="Lunar exploration robot">
+            </div>
+            <!-- Footer-->
+            <div id="footer" class="footer">
+                <p>Made for the CS50x web track. Luis Fuenmayor, 2020</p>
+            </div>
+        </div>
+
+    <!-- Bootstrap scripts-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <!-- Load theme. Method from: https://stackoverflow.com/questions/9899372/pure-javascript-equivalent-of-jquerys-ready-how-to-call-a-function-when-t/9899701#9899701-->
+    <script>
+        (function() {
+          setTheme();
+        })();
+    </script>
+    </body>
+</html>

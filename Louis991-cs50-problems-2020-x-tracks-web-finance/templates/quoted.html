@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    {% if symbol != None %}
+        <p>A share from {{ sym["name"] }} ({{ sym["symbol"] }}) is worth {{ price }}</p>
+    {% endif %}
+{% endblock %}

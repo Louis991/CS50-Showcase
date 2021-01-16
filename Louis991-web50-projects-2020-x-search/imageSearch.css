@@ -1,0 +1,19 @@
+/* Image search layout */
+form{
+	display: grid;
+	justify-content: center;
+	grid-template-rows: auto auto;
+	grid-template-columns: repeat(2, minmax(180px, 285px));
+	grid-template-areas: 
+		"searchBar searchBar"
+		"imageButton imageButton";
+	grid-gap: 29px;
+	text-align: left;
+}
+
+/* Align image search button*/
+#imageSearch{
+	grid-area: imageButton;
+	margin-left: auto;
+	margin-right: auto;
+}

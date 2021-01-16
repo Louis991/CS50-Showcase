@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Advanced Search</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="advancedSearch.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav id="navbar">
+            <img src="logo.png" id="advancedSLogo">
+            <ul>
+                <a href="index.html">Google Search</a>
+                <a href="imageSearch.html">Images</a>
+            </ul>
+        </nav>
+        <header>
+            <p>Advanced Search</p>
+        </header>
+        <main>
+            <form action="https://google.com/search">
+                <!-- Headers -->
+                <p id="searchType">Find pages with...</p>
+                <p id="searchGuide">To do this in the search box.</p>
+                <!-- All these words search -->
+                <label id="allTheseWords-label" for="allTheseWords">all these words:</label>
+                <input type="text" id="allTheseWords" class="advancedField" name="as_q">
+                <p id="allTheseWords-desc" class="guide">Type the important words:<br><span class="example">tri-colour rat terrier</span></p>
+                <!-- Exact words search -->
+                <label id="exactWOrP-label" for="exactWOrP">this exact word or phrase:</label>
+                <input type="text" id="exactWOrP" class="advancedField" name="as_epq">
+                <p id="exactWOrP-desc" class="guide">Put exact words in quotes:<br><span class="example">"rat terrier"</span></p>
+                <!-- Any of search -->
+                <label id="anyOf-label" for="anyOf">any of these words: </label>
+                <input type="text" id="anyOf" class="advancedField" name="as_oq">
+                <p id="anyOf-desc" class="guide">Type OR between all the words you want:<br><span class="example">miniature OR standard</span></p>
+                <!-- None of search -->
+                <label id="noneOf-label" for="noneOf">none of these words: </label>
+                <input type="text" id="noneOf" class="advancedField" name="as_eq">
+                <p id="noneOf-desc" class="guide">Put a minus sign just before words that you don't want:<br><span class="example">-rodent, -"Jack Russell"</span></p>
+                <!-- Advanced search button -->
+                <button type="submit" id="advancedSButton">Advanced Search</button>
+            </form>
+        </main>
+    </body>
+</html>

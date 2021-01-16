@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Your summary
+{% endblock %}
+
+{% block main %}
+<div class="table-responsive-md">
+    <table class="table table-hover table-sm" id="summary">
+        <caption>
+            Current cash balance: {{ currentCashString }}<br>
+            Grand total: {{ grandTotal }}
+        </caption>
+        <!-- Headers-->
+        <thead>
+            <tr>
+                <th scope="col">Stock name</th>
+                <th scope="col">Symbol</th>
+                <th scope="col">Number of shares owned</th>
+                <th scope="col">Current stock price of each share</th>
+                <th scope="col">Holding value</th>
+                <th scope="col">Sell</th>
+            </tr>
+        </thead>
+        {% for x in range(rowsLength) %}
+            {% if rows[x]["SUM(bought)"] > 0 %}
+                <tbody>
+                    <tr>
+                        <!--Stock name-->
+                        <td>{{ companyNames[x] }}</td>
+                        <!--Symbol-->
+                        <td>{{ rows[x]["symbol"] }}</td>
+                        <!--Number of shares owned-->
+                        <td>{{ rows[x]["SUM(bought)"] }}</td>
+                        <!--Current stock price of each share-->
+                        <td>{{ stockPrices[x] }}</td>
+                        <!--Holding value-->
+                        <td>{{ holdingValuesString[x] }}</td>
+                        <!--Sell-->
+                        <td>
+                            <form action="/sell" method="POST">
+                                <div class="form-group embedded-sale">
+                                    <input type="hidden" name="symbol" value="{{ rows[x]["symbol"] }}">
+                                    <input class="form-control" id="embedded-sale-number" name="shares" type="number" min="1" step="1" value="1"><button class="btn btn-primary embedded-sale" type="submit">Sell</button>
+                                </div>
+                            </form>
+                        </td>
+                    </tr>
+                </tbody>
+            {% endif %}
+        {% endfor %}
+    </table>
+</div>
+{% endblock %}

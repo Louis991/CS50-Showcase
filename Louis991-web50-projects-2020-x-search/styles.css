@@ -1,0 +1,113 @@
+/* Body adjustments */
+body{
+	box-sizing: border-box;
+}
+
+
+/* No default outline for form inputs */
+input:focus{
+        outline: none;
+}
+button:focus{
+        outline: none;
+}
+
+
+/* Navbar */
+#navbar{
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 20px;
+	margin-top: -3px;
+}
+
+a{
+	text-decoration: none;
+	font: 400 13.3333px Arial; 
+	color: rgb(65, 65, 65);
+	margin-right: 20px;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+
+/* Arranging the search section */
+main{
+	margin-top: 92px;
+}
+
+#search{
+	display: grid;
+	justify-content: center;
+}
+
+form{
+	display: grid;
+	justify-content: center;
+	grid-template-rows: auto auto;
+	grid-template-columns: repeat(2, minmax(180px, 285px));
+	grid-template-areas: 
+		"searchBar searchBar"
+		"googleButton luckyButton";
+	grid-gap: 29px;
+	text-align: left;
+}
+
+#searchBar{grid-area: searchBar;}
+#googleSearch{grid-area: googleButton;}
+#feelingLucky{grid-area: luckyButton;}
+#logo{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/* Styling the search bar */
+#searchBar{
+	display: flex;
+	justify-content: center;
+	height: 2.9em;
+	border: 0.2px solid rgb(225, 225, 225);
+	border-radius: 20px;
+	padding-left: 2em;
+	padding-right: 2em;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 28px;
+}
+
+#searchBar:focus, #searchBar:hover, #searchBar:active{
+	box-shadow: 0px 1px 4px silver;
+}
+
+
+/* Styling the search buttons */
+.searchButton{
+	width: 11em;
+	height: 2.7em;
+	border: 0;
+	border-radius: 3px;
+	color: rgb(65, 65, 65);
+	background-color: rgb(247, 247, 247);
+	padding: 5px;
+}
+
+.searchButton:hover{
+	border: 0.1px solid rgb(225, 225, 225);
+	box-shadow: 0px 1.3px 1px silver;
+}
+
+.searchButton:active{
+	border: 0.5px solid rgb(32,124,229);
+}
+
+#googleSearch{
+	margin-left: auto;
+	margin-right: -3px;
+}
+#feelingLucky{
+	margin-right: auto;
+	margin-left: -3px;
+}

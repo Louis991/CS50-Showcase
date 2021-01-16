@@ -1,0 +1,70 @@
+/*-----------------------*/
+/* Mobile layout */
+/*-----------------------*/
+#container
+{
+    display: grid;
+        grid-template-rows: repeat(7, auto);
+        grid-template-columns: auto;
+        grid-template-areas:
+            "nav"
+            "about"
+            "pv"
+            "pvimg"
+            "robo"
+            "roboimg"
+            "footer";
+}
+
+#navbar {grid-area: nav;}
+#aboutEE-section {grid-area: about;}
+#pv {grid-area: pv;}
+#pvimg {grid-area: pvimg;}
+#robo {grid-area: robo;}
+#roboimg {grid-area: roboimg;}
+#footer {grid-area: footer;}
+
+#pvimg
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#roboimg
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+@media all and (min-width: 1116px)
+{
+    #roboimg img
+    {
+        border: 1px solid black;
+        border-radius: 5px;
+        box-shadow: 0px 0px 2px 2px grey;
+    }
+}
+
+/*-----------------------*/
+/* Desktop layout */
+/*-----------------------*/
+@media all and (min-width: 673px)
+{
+    #pvimg
+    {
+        display: grid;
+        grid-template-rows: repeat(auto-fill, auto);
+        grid-template-columns: repeat(auto-fill, 335px);
+        justify-content: center;
+        gap: 0px;
+    }
+
+}
+
+/* Some margins and paddings*/
+#pvimg{margin-bottom: 30px;}
+#robo{margin-bottom: 30px;}
+#roboimg{margin-bottom: 2.5em;}
+#robo1, #robo2{margin-top: -10px;}

@@ -1,0 +1,64 @@
+nav .navbar-brand
+{
+    /* size for brand */
+    font-size: xx-large;
+}
+
+/* colors for brand */
+
+nav .navbar-brand .brandcolor
+{
+    /*color: #7ace67;*/
+    color: #59bcea;
+}
+
+nav .navbar-brand .brandcolor2
+{
+    color: #bcea59;
+}
+
+/* shadows for brand text */
+.navbar-brand
+{
+    text-shadow: 0.6px 0.6px 1px grey;
+}
+
+main .form-control, .custom-select
+{
+    /* center form controls */
+    display: inline-block;
+
+    /* override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+/* Embedded sale form adjustments */
+#embedded-sale-number
+{
+    height: 2em;
+    width: 5em;
+    margin-top: -10px;
+    margin-right: 5px;
+}
+
+main
+{
+    /* scroll horizontally as needed */
+    overflow-x: auto;
+
+    /* center contents */
+    text-align: center;
+}
+
+main img
+{
+    /* constrain images on small screens */
+    max-width: 100%;
+}
+
+/* Alignment for the cash balance and grand total in the main page */
+#summary caption
+{
+    caption-side: top;
+    text-align: left;
+}

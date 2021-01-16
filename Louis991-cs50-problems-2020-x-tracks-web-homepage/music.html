@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <link href="music.css" rel="stylesheet">
+        <script src="index.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>My Homepage - Music</title>
+    </head>
+    <body>
+        <div id="container">
+            <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark" id="navbar">
+                <a class="navbar-brand" href="#">LF</a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="ee.html">E.E. Info</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="books.html">Favorite books</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="music.html">Music</a>
+                    </li>
+                  </ul>
+                </div>
+                <a class="navbar-brand ml-auto" onclick="setCookie()" href="#"><div class="moon"></div></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+            <!-- About music-->
+            <section id="aboutmusic">
+                <h1>My favorite music.</h1>
+                <p>Here are some of my favorite bands or artists.</p>
+            </section>
+            <!-- Rammstein-->
+            <section id="rammstein-desc" class="desc">
+                <h2>Rammstein</h2>
+                <p class="muTag">Gluttural, aggressive, primal.</p>
+                <p>Rammstein (German pronunciation: [ˈʁamʃtaɪn]) is a German Neue Deutsche Härte band formed in Berlin in 1994. The band's lineup—consisting of lead vocalist Till Lindemann, lead guitarist Richard Kruspe, rhythm guitarist Paul Landers, bassist Oliver Riedel, drummer Christoph Schneider, and keyboardist Christian "Flake" Lorenz—has remained unchanged throughout their history. Their approach to songwriting has also remained unchanged, with Lindemann writing and singing the lyrics over instrumental pieces that the rest of the band have completed beforehand. Prior to their formation, some members were associated with the punk rock acts Feeling B and First Arsch.</p>
+            </section>
+            <div id="rammstein-video" class="embed-responsive embed-responsive-16by9 video">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Uq41Fmw5CGI" allowfullscreen></iframe>
+            </div>
+
+            <!-- Pink Floyd-->
+            <section id="pinkfloyd-desc" class="desc">
+                <h2>Pink Floyd</h2>
+                <p class="muTag">Introspective, psychodelic, nostalgic.</p>
+                <p>Pink Floyd were an English rock band formed in London in 1965. Gaining a following as a psychedelic pop group, they were distinguished for their extended compositions, sonic experimentation, philosophical lyrics and elaborate live shows, and became a leading band of the progressive rock genre. Pink Floyd were one of the first British psychedelia groups, and are credited with influencing genres such as neo-progressive rock and ambient music.</p>
+            </section>
+            <div id="pinkfloyd-video" class="embed-responsive embed-responsive-16by9 video">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/7jMlFXouPk8" allowfullscreen></iframe>
+            </div>
+            <!-- Satriani-->
+            <section id="satriani-desc" class="desc">
+                <h2>Joe Satriani</h2>
+                <p class="muTag">Technical, inspiring.</p>
+                <p>Joseph Satriani (born July 15, 1956) is an American rock musician, composer, songwriter, and guitar teacher. Early in his career, Satriani worked as a guitar instructor, with many of his former students achieving fame, such as Steve Vai, Larry LaLonde, Rick Hunolt, Kirk Hammett, Andy Timmons, Charlie Hunter, Kevin Cadogan, and Alex Skolnick; he then went on to have a successful solo music career. He is a 15-time Grammy Award nominee and has sold over 10 million albums, making him the best-selling instrumental rock guitarist of all time.</p>
+            </section>
+            <div id="satriani-video" class="embed-responsive embed-responsive-16by9 video">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/QIeCCqWSRnw" allowfullscreen></iframe>
+            </div>
+            <!-- Kavinsky-->
+            <section id="kavinsky-desc" class="desc">
+                <h2>Kavinsky</h2>
+                <p class="muTag">Energetic, focused, automotive.</p>
+                <p>Vincent Belorgey (born July 31, 1975), known professionally as Kavinsky, is a French musician, producer, DJ and actor. His production style is reminiscent of the electropop film soundtracks of the 1980s. Kavinsky claimed that his music is inspired by thousands of movies he watched as a young boy and that he has cherry-picked the best parts from them, consolidating them into one concept. Kavinsky has been compared to many similar French house artists including Daft Punk and Danger. He achieved greater mainstream recognition after his song "Nightcall" was featured in the 2011 film Drive. His debut studio album, OutRun, was released in 2013.</p>
+            </section>
+            <div id="kavinsky-video" class="embed-responsive embed-responsive-16by9 video">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/N70DRo8_WwA" allowfullscreen></iframe>
+            </div>
+            <!-- Footer-->
+            <div id="footer" class="footer">
+                <p>Made for the CS50x web track. Luis Fuenmayor, 2020</p>
+            </div>
+        </div>
+    <!-- Bootstrap scripts-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <!-- Load theme. Method from: https://stackoverflow.com/questions/9899372/pure-javascript-equivalent-of-jquerys-ready-how-to-call-a-function-when-t/9899701#9899701-->
+    <script>
+        (function() {
+          setTheme();
+        })();
+    </script>
+    </body>
+</html>
